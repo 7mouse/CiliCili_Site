@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+img {
+    width: 220px;
+    display: block;
+}
+
+.item {
+    box-shadow: 2px 2px 2px #999;
+    position: absolute;
+}

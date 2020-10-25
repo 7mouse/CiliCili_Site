@@ -1,0 +1,152 @@
+.zh-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 69%;
+  height: 100%;
+  background-color: #000;
+}
+.zh-player-video {
+  width: 100%;
+}
+.zh-player-video video {
+  position: unset;
+  width: 100%;
+}
+.zh-player-video-state {
+  position: absolute;
+  background: url(../img/pause.svg);
+  background-size: 100% 100%;
+  width: 15%;
+  height: 15%;
+  right: 5%;
+  bottom: 15%;
+  opacity: 0;
+}
+
+.zh-player-video-controls-wrap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 8%;
+  width: 98%;
+  padding: 0 1%;
+  /* background-color: #ddd; */
+  transition: 0.4s;
+}
+
+.zh-player-video-controls-wrap .zh-player-video-controls-top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  height: 20%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.zh-player-video-controls-top .zh-player-video-progress {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #888;
+}
+.zh-player-video-controls-top:hover .zh-player-video-progress {
+  height: 4px;
+}
+.zh-player-video-controls-top .zh-player-video-progress-slider {
+  position: absolute;
+  background-color: #AAA;
+  width: 100%;
+  height: 2px;
+  transform-origin: 0 0;
+  transform: scaleX(0.0);
+  -webkit-transform: scaleX(0.0);
+  -moz-transform: scaleX(0.0);
+  -ms-transform: scaleX(0.0);
+  -o-transform: scaleX(0.0);
+}
+.zh-player-video-controls-top:hover .zh-player-video-progress-slider {
+  height: 4px;
+}
+.zh-player-video-controls-top .zh-player-video-progress-loaded {
+  position: absolute;
+  background-color: #22d;
+  width: 100%;
+  height: 2px;
+  transform-origin: 0 0;
+  transform: scaleX(0.0);
+  -webkit-transform: scaleX(0.0);
+  -moz-transform: scaleX(0.0);
+  -ms-transform: scaleX(0.0);
+  -o-transform: scaleX(0.0);
+}
+.zh-player-video-controls-top:hover .zh-player-video-progress-loaded {
+  height: 4px;
+}
+.zh-player-video-controls-top .dot {
+  position: absolute;
+  left: 0%;
+  width: 4px;
+  margin-left: -2px;
+  height: 2px;
+  z-index: 4;
+  background-color: #ff4;
+}
+
+.zh-player-video-controls-top:hover .dot {
+  height: 4px;
+}
+.zh-player-video-controls-top:hover .dot:hover {
+  height: 8px;
+  width: 8px;
+  margin-left: -4px;
+}
+/* ------------------------------ 控制栏底部 --------------------------------------- */
+.zh-player-video-controls-wrap .zh-player-video-controls-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 80%;
+  width: 100%;
+}
+
+.zh-player-video-controls-bottom-left, .zh-player-video-controls-bottom-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+.zh-player-video-controls-bottom-right {
+  justify-content: flex-end;
+}
+/* 播放按钮 */
+.zh-player-video-controls-playBtn {
+  
+  width: 40px;
+  height: 40px;
+  background: url(../img/play.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.zh-player-video-controls-playBtn.paused {
+  background: url(../img/pause.svg) no-repeat;
+  background-size: 100% 100%;
+}
+/* 时间栏 */
+.zh-player-video-time-wrap {
+  user-select: none;
+  font-size: 1rem;
+}
+/* 全屏按钮 */
+.zh-player-video-controls-fullscreenBtn {
+  width: 40px;
+  height: 40px;
+  background: url(../img/fullscreen.svg) no-repeat;
+  background-size: 100% 100%;
+}

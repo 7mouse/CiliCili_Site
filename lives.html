@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CiliCili</title>
+    <link rel="stylesheet" href="./styles/basic.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="cili-header" id="header">
+        <div class="nav-menu">
+            <img src="./images/logo.png" alt="Logo" class="nav-menu-logo">
+            <div class="leimu">
+                <img src="./images/1.png" alt="leimu">
+            </div>
+            <ul class="nav-menu-ul">
+                <li><a href="index.html">主页</a></li>
+                <li><a href="photos.html">图片</a></li>
+                <li><a href="lives.html">视频</a></li>
+                <li class="nav-menu-li-mima">
+                    <a href="dowload.html" target="_blank">下载
+                    </a>
+                    <div class="nav-menu-img-mima">
+                        <img src="./images/mima.png" alt="">
+                    </div>
+                </li>
+                <li><a href="contact.html">联系</a></li>
+                <li><a href="game.html">小游戏</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Type to search">
+                <a class="search-btn" href="#">
+                    <img class="search-icon" src="./images/search_image.png" alt="searchImage">
+                </a>
+            </div>
+            <div class="login">
+                <a href="#" class="login-anchor">登陆/注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="denglu">
+        <img class="bou-girl" src="./images/girlbg02.png" alt="">
+        <div class="login-window">
+            <div class="login-close">
+                <span class="s1">登陆</span>
+                <span class="s2"></span>
+            </div>
+            <input class="telep" id="phone" type="tel" placeholder="请输入账号" autocomplete required>
+            <input class="passw" id="userpassword" type="password" placeholder="请输入密码">
+            <img class="telep_bg" src="./images/telep_bg.png" alt="">
+            <img class="passw_bg" src="./images/passw_bg.png" alt="">
+            <div id="log-btn" class="load-btn"><span></span>登录</div>
+            <div class="guodu">
+                <span class="loginin">注册</span>
+                <span>第三方登录</span>
+                <span class="other">
+                    <a class="q1" href="#" target="_self"><img src="./images/q1.png" alt="ACG社区"></a>
+                    <a class="q2" href="#" target="_self"><img src="./images/w1.png" alt="COSPLAY社区"></a>
+                    <a class="q3" href="#" target="_self"><img src="./images/x1.png" alt="ACG社区"></a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <table border="1">
+            <tr>
+                <th>周一</th>
+                <th>周二</th>
+                <th>周三</th>
+                <th>周四</th>
+                <th>周五</th>
+                <th>周六</th>
+                <th>周日</th>
+            </tr>
+            <tr>
+                <td>复仇的英雄</td>
+                <td>进击的巨人</td>
+                <td>MAD更新</td>
+                <td>无双</td>
+                <td></td>
+                <td>超星塞尔</td>
+                <td>十月星霜</td>
+            </tr>
+            <tr>
+                <td>译者传说</td>
+                <td>盾之勇者成名录</td>
+                <td>一拳超人</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="lives">
+        <div class="video-box">
+            <div class="zh-player">
+                <div class="zh-player-video-state"></div>
+                <div class="zh-player-video-panel">
+                    <!-- 加载中图标, 播放器初始化进度/状态 -->
+                    <div class="zh-player-video-panel-blur"></div>
+                    <div class="zh-player-video-panel-text"></div>
+                </div>
+                <div class="zh-player-video-danmaku"></div>
+                <div class="zh-player-video">
+                    <video src="">
+
+                    </video>
+                </div>
+                <div class="zh-player-video-controls-wrap">
+                    <div class="zh-player-video-controls-top">
+                        <div class="zh-player-video-progress">
+                        </div>
+                        <div class="zh-player-video-progress-slider">
+                        </div>
+                        <div class="zh-player-video-progress-loaded">
+                        </div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="zh-player-video-controls-bottom">
+                        <div class="zh-player-video-controls-bottom-left">
+                            <div class="zh-player-video-controls-playBtn"></div>
+                            <div class="zh-player-video-time-wrap">
+                                <span class="zh-player-video-time-wrap-now">0</span>
+                                <span>/</span>
+                                <span class="zh-player-video-time-wrap-total">0</span>
+                            </div>
+                        </div>
+                        <div class="zh-player-video-controls-bottom-right">
+                            <div class="zh-player-video-controls-fullscreenBtn"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="zh-player-video-controls-volumeHint"></div>
+            </div>
+            <div class="video-list">
+                <p class="video-list-title">播放列表</p>
+            </div>
+        </div>
+    </div>
+    <div class="lives-lists">
+        <div class="lives-top">
+            <div class="lives-top-img">
+            </div>
+            <h1>视频专区</h1>
+        </div>
+        <div class="lives-main">
+            <div class="lives-main-item">
+                <div class="lives-main-img">
+                    <img src="./images/wk.png" alt="">
+                </div>
+                <div class="lives-main-bottom">
+                    <p class="lives-main-text" title="1">翁恺C++</p>
+                </div>
+            </div>
+            <div class="lives-main-item">
+                <div class="lives-main-img">
+                    <img src="./images/python.png" alt="">
+                </div>
+                <div class="lives-main-bottom">
+                    <p class="lives-main-text" title="1">Python机器学习</p>
+                </div>
+            </div>
+            <div class="lives-main-item">
+                <div class="lives-main-img">
+                    <img src="./images/grid/1 (109).jpg" alt="">
+                </div>
+                <div class="lives-main-bottom">
+                    <p class="lives-main-text" title="1">AMV</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-center">
+            <div class="footer-about">
+                <p class="footer-title">
+                    关于我们
+                </p>
+                <ul>
+                    <li class="footer-link-item"><a rel="nofollow" href="#" target="_blank">申请认证</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="#" target="_blank">联系我们</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="#" target="_blank">免责声明</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="#" target="_blank">监护工程</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="#" target="_blank">账号注销</a></li>
+                </ul>
+                <div class="footimg">
+                    <img src="./images/back.png" alt="">
+                </div>
+            </div>
+            <div class="footer-links">
+                <p class="footer-title">
+                    友情链接
+                </p>
+                <ul>
+                    <li class="footer-link-item"><a rel="nofollow" href="https://www.diyidan.com/"
+                            target="_blank">第一弹</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="http://www.manzhan8.com/"
+                            target="_blank">漫展吧</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="http://book.sfacg.com/"
+                            target="_blank">SF轻小说</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="http://manhua.163.com/"
+                            target="_blank">网易漫画</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="http://www.iqing.com/"
+                            target="_blank">轻文轻小说</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="http://www.buka.cn/" target="_blank">布卡漫画</a>
+                    </li>
+                    <li class="footer-link-item"><a rel="nofollow" href="http://www.missevan.com/"
+                            target="_blank">猫耳FM</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="http://www.zymk.cn/" target="_blank">知音漫客网</a>
+                    </li>
+                    <li class="footer-link-item"><a rel="nofollow" href="http://www.mkzhan.com/" target="_blank">漫客栈</a>
+                    </li>
+                    <li class="footer-link-item"><a rel="nofollow" href="http://www.fringe-zero.com/"
+                            target="_blank">零界点</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="http://www.linovel.net/"
+                            target="_blank">轻之文库</a></li>
+                    <li class="footer-link-item"><a rel="noopener noreferrer" href="http://www.kuaikanmanhua.com/"
+                            target="_blank">快看漫画</a></li>
+                    <li class="footer-link-item"><a rel="nofollow" href="https://www.doufu.la/" target="_blank">豆腐</a>
+                    </li>
+                    <li class="footer-link-item"><a rel="noopener noreferrer" href="http://www.hongdoufm.com/"
+                            target="_blank">KilaKila</a></li>
+                    <li class="footer-link-item"><a rel="noopener noreferrer" href="https://www.iyingdi.com/"
+                            target="_blank">旅法师营地</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <a href="#header"><img src="./images/top.png" alt="">Top</a>
+    </div>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/lives.js"></script>
+</body>
+
+</html>

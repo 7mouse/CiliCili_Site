@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: #fd2d98;
+    overflow: hidden;
+}
+
+.window {
+    position: relative;
+    height: 682px;
+    width: 100%;
+    background: url(../images/dot.png) repeat;
+    overflow: hidden;
+}
+
+.center-dot {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+    height: 23rem;
+    background: url(../images/dot-light.png) repeat;
+}
+
+.left-girl {
+    z-index: 200;
+    position: absolute;
+    width: 392px;
+    height: 684px;
+    left: calc(50% - 392px - 61px);
+}
+
+.left-girl img {
+    width: 392px;
+    height: auto;
+}
+
+.left-girl-play {
+    -moz-animation: left-girl 2s;	/* Firefox */
+    -webkit-animation: left-girl 2s;	/* Safari 和 Chrome */
+    -o-animation: left-girl 2s;	/* Opera */
+    animation: left-girl 2s;
+    /* animation-delay: 2s; */
+}
+
+@keyframes left-girl {
+    0%, 50% {
+        left: -392px;
+    }
+    50%, 100% {
+        left: calc(50% - 392px - 61px);
+    }
+}
+
+
+.right-girl {
+    z-index: 200;
+    position: absolute;
+    width: 669px;
+    height: 684px;
+    right: calc(50% - 669px);
+}
+
+.right-girl img {
+    width: 669px;
+    height: auto;
+}
+
+.right-girl-play {
+    -moz-animation: right-girl 2s;	/* Firefox */
+    -webkit-animation: right-girl 2s;	/* Safari 和 Chrome */
+    -o-animation: right-girl 2s;	/* Opera */
+    animation: right-girl 2s;
+    animation-play-state: running;
+}
+
+@keyframes right-girl {
+    0%, 50% {
+        right: -669px;
+    }
+    50%, 100% {
+        right: calc(50% - 669px);
+    }
+}
+
+.center-download {
+    z-index: 300;
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    width:257px;
+    height: 531px;
+    left: calc(50% - 128.5px);
+    top: calc(50% - 265.5px);
+    background: url(../images/dwn-shu.png) no-repeat;
+    background-size: 257px auto;
+}
+
+.center-play {
+    animation: center-play 2s;
+}
+
+@keyframes center-play {
+    0%, 50% {
+        transform: rotateY(180deg);
+    }
+    50%, 100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.center-code {
+    height: 10rem;
+    width: auto;
+    background: url(../images/mima.png) no-repeat center;
+    background-size: contain;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.android {
+    cursor: pointer;
+    height: 4rem;
+    width: auto;
+    background: url(../images/andwn.png) no-repeat center;
+    background-size: contain;
+    margin-bottom: 1rem;
+}
+.android:hover {
+    background: url(../images/andwnh.png) no-repeat center;
+    background-size: contain;
+}
+.ios {
+    cursor: pointer;
+    height: 4rem;
+    width: auto;
+    background: url(../images/ios_dwn.png) no-repeat center;
+    background-size: contain;
+    margin-bottom: 1rem;
+}
+.ios:hover {
+    background: url(../images/ios_dwnh.png) no-repeat center;
+    background-size: contain;
+}
+.left {
+    float: left;
+    width: 50%;
+    height: 682px;
+    overflow: hidden;
+    position: relative;
+    text-align: right;
+    z-index: 200;
+}
+
+.l1 {
+    position: absolute;
+    top: 30rem;
+    right: 30rem;
+}
+
+.l2 {
+    position: absolute;
+    top: 35rem;
+    right: 20rem;
+}
+.cartoon-ball {
+    -moz-animation: opacity 3s;	/* Firefox */
+    -webkit-animation: opacity 3s;	/* Safari 和 Chrome */
+    -o-animation: opacity 3s;	/* Opera */
+    animation: opacity 3s; 
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+}
+
+@keyframes opacity {
+    0%, 50% {
+        opacity: 0;
+    }
+    50%, 100% {
+        opacity: 1;
+    }
+}
+
+.right {
+    z-index: 200;
+    float: right;
+    width: 50%;
+    height: 682px;
+    overflow: hidden;
+    position: relative;
+    text-align: right;
+}
+.l3 {
+    top: 30rem;
+    position: absolute;
+    right: 15rem;
+}
+.l4 {
+    top: 23rem;
+    position: absolute;
+    right: 7rem;
+}
+.l5 {
+    top: 35rem;
+    position: absolute;
+    right: 10rem;
+}
+
+.line {
+    z-index: 100;
+    bottom: 0;
+    width: 98%;
+    left: 1.5%;
+    position: absolute;
+}
+.line1 {
+    width: 49%;
+}
+
+.line2 {
+    width: 49%;
+}
+
+.dwn-dm-top, .dwn-dm-bottom {
+    overflow: hidden;
+    width: 100%;
+    height: 14rem;
+    box-sizing: border-box;
+    /* padding: 1.5rem 0; */
+}
+
+.dwn-dm-top {
+    z-index: 3;
+    top: 0;
+    position: absolute;
+}
+
+.dwn-dm-bottom {
+    bottom: 0;
+    position: fixed;
+}
+
+.dan-m-span {
+    transition: right 30ms;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+body > p {
+    position: absolute;
+    /* font-size: 40px; */
+    color:white;
+    /* top: 12px; */
+    /* left: -230px; */
+    white-space: nowrap;
+}
+
